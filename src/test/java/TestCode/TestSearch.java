@@ -29,7 +29,8 @@ public class TestSearch{
     }
     
     private void init(){
-        solrClient = new HttpSolrClient.Builder(URL).build();
+//        solrClient = new HttpSolrClient.Builder(URL).build();
+        solrClient = new HttpSolrClient(URL);
         solrClient.setConnectionTimeout(timeout);
     }
     
